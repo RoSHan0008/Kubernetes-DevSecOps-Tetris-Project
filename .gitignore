@@ -7,6 +7,8 @@
 # Variables
 *.tfvars
 *.tfvars.json
+!EKS-TF/variables.tfvars
+!Jenkins-Server-TF/terraform.tfvars
 
 # Crash logs
 crash.log
