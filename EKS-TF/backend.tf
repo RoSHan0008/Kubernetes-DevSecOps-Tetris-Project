@@ -6,10 +6,10 @@ terraform {
     use_lockfile = true
     encrypt      = true
   }
-  required_version = ">=1.12.0"
+  required_version = ">=1.13.3"
   required_providers {
     aws = {
-      version = ">= 5.49.0"
+      version = ">=6.54.0"
       source  = "hashicorp/aws"
     }
   }
