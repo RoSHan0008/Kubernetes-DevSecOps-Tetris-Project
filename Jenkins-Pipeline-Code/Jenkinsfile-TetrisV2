@@ -1,4 +1,4 @@
-pipeline {
+    pipeline {
     agent any
     tools {
         nodejs 'nodejs'
@@ -22,7 +22,8 @@ pipeline {
                 dir('Tetris-V2') {
                     withSonarQubeEnv('sonar-server') {
                         sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Tetris \
-                        -Dsonar.projectKey=Tetris '''
+                        -Dsonar.projectKey=Tetris \
+                        -Dsonar.host.url=http://34.231.229.104:9000 '''
                     }
                 }
             }
